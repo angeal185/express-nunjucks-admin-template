@@ -1,0 +1,28 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}}{{header1}}</h3>
+</div>
+{% include "admin-includes/cards/_card-default.njk" %}
+    <div class="text-center m-b">
+      <h3 class="m-b-0" {{dc}}>{{title}}{{header2}}</h3>
+    </div>
+{% include "admin-includes/cards/_card-thumbnail.njk" %}
+    <div class="text-center m-b">
+      <h3 class="m-b-0" {{dc}}>{{title}}{{header3}}</h3>
+    </div>
+{% include "admin-includes/cards/_card-overlay.njk" %}
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("h4").addClass("hvr-buzz");
+
+});
+</script>
+{% endblock %}

@@ -1,0 +1,35 @@
+﻿.jstree-default .jstree-clicked {
+    background: transparent;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 0 0 4px #999;
+}
+
+.jstree-default .jstree-hovered{
+	background-color: black;
+	opacity:.5;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border-radius: 4px;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    border-radius: 4px;
+	padding-left: 4px;
+}
+
+.vakata-context, .vakata-context ul {
+    margin: 0;
+    padding: 2px;
+    border-radius: 4px;
+    position: absolute;
+    background: #fff4f4;
+    opacity: .8;
+    box-shadow: 2px 2px 2px #b5a5a5;
+}

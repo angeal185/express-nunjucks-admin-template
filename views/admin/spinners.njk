@@ -1,0 +1,35 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row gutter-xs panel panel-body text-center m-b">
+    <h3 {{dc}}>Types</h3>
+  </div>
+<div id="spinnerxs" class="row gutter-xs"></div>
+<div class="row gutter-xs panel panel-body text-center m-b">
+  <h3 {{dc}}>Sizes</h3>
+</div>
+<div id="spinnermd" class="row gutter-xs"></div>
+<div class="row gutter-xs panel panel-body text-center m-b">
+  <h3 {{dc}}>Variations</h3>
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/spinners/_spinner-default-buttons.njk" %}
+{% include "admin-includes/spinners/_spinner-input.njk" %}
+{% include "admin-includes/spinners/_spinner-primary-buttons.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script><script src="/js/jquery.json2html.js"></script>
+<script src="/json/spinners.json"></script>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".col-md-3").eq(5).css({"float":"right"});
+});
+</script>
+{% endblock %}

@@ -1,0 +1,91 @@
+<div class="demo-form-wrapper">
+  <form class="form form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-17">Input groups</label>
+      <div class="col-sm-9">
+        <div class="input-group">
+          <input id="form-control-17" class="form-control" type="text" placeholder="{{Name}}">
+          <span class="input-group-addon">{{Name}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-4 col-sm-3 col-sm-offset-3">
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input class="form-control" type="text" value="1.00" aria-label="US Dollar">
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-3">
+        <div class="input-group">
+          <span class="input-group-addon">€</span>
+          <input class="form-control" type="text" value="0.89" aria-label="Euro">
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-3">
+        <div class="input-group">
+          <span class="input-group-addon">£</span>
+          <input class="form-control" type="text" value="0.69" aria-label="British Pound">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-3">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <span class="fa fa-lock"></span>
+          </span>
+          <input class="form-control" type="password" placeholder="Password">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-3">
+        <div class="input-group">
+          <div class="input-group-btn dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+              {{Name}}
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="{{JSV}}">
+                  <div class="media">
+                    <div class="media-left">
+                      <span class="fa fa-github fa-2x fa-fw"></span>
+                    </div>
+                    <div class="media-body">
+                      {{Name}}
+                      <br>
+                      <small>{{Subject}}</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="{{JSV}}">
+                  <div class="media">
+                    <div class="media-left">
+                      <span class="fa fa-bitbucket fa-2x fa-fw"></span>
+                    </div>
+                    <div class="media-body">
+                      {{Name}}
+                      <br>
+                      <small>{{Subject}}</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <input class="form-control" type="text" value="{{JSV}}">
+          <div class="input-group-btn">
+            <button class="btn btn-primary" title="Copy to clipboard" data-container="body" data-placement="top" data-toggle="tooltip" type="button">
+              <span class="fa fa-copy fa-fw"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

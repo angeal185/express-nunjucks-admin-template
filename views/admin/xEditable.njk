@@ -1,0 +1,79 @@
+{% extends 'layout.njk' %}
+{% block styles %}﻿
+<link href="/css/x-editable/select2.css" rel="stylesheet">
+<link href="/css/x-editable/datetimepicker.css" rel="stylesheet">
+<link href="/css/x-editable/bootstrap-editable.css" rel="stylesheet">
+<link href="/css/x-editable/select2-bootstrap.css" rel="stylesheet">
+<link href="/css/x-editable/typeahead.js-bootstrap.css" rel="stylesheet">
+<link href="/css/x-editable/bootstrap-wysihtml5-0.0.3.css" rel="stylesheet">
+<link href="/css/x-editable/demo-bs3.css" rel="stylesheet">
+<link href="/css/x-editable/address.css" rel="stylesheet">
+<link href="/css/glyphicon.css" rel="stylesheet">
+<style type="text/css">
+    #comments:hover {
+        background-color: #FFFFC0;
+        cursor: text;
+    }
+    body {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    table.table > tbody > tr > td {
+        height: 30px;
+        vertical-align: middle;
+    }
+    .layout {
+    padding-top: 30px;
+    padding-bottom: -30px;
+  }
+</style>
+{% endblock %}
+{% block content %}﻿
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div style="width: 80%; margin: auto;">
+{% include "admin-includes/x-editable/_x-header.njk" %}
+    <table id="user" class="table table-bordered table-striped" style="clear: both">
+        <tbody>
+{% include "admin-includes/x-editable/_simple-text-field.njk" %}
+{% include "admin-includes/x-editable/_empty-text-field.njk" %}
+{% include "admin-includes/x-editable/_select-local-array.njk" %}
+{% include "admin-includes/x-editable/_select-remote-array.njk" %}
+{% include "admin-includes/x-editable/_select-error-loading.njk" %}
+{% include "admin-includes/x-editable/_select-datepicker.njk" %}
+{% include "admin-includes/x-editable/_select-combodate.njk" %}
+{% include "admin-includes/x-editable/_textarea-buttons-below.njk" %}
+{% include "admin-includes/x-editable/_twitter-typehead.njk" %}
+{% include "admin-includes/x-editable/_checklist.njk" %}
+{% include "admin-includes/x-editable/_select2-tags.njk" %}
+{% include "admin-includes/x-editable/_select2-dropdown.njk" %}
+{% include "admin-includes/x-editable/_custom-several-fields.njk" %}
+{% include "admin-includes/x-editable/_wysiwyg.njk" %}
+        </tbody>
+    </table>
+{% include "admin-includes/x-editable/_console.njk" %}
+{% include "admin-includes/x-editable/_links.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}﻿
+<script src="/js/x-editable/jquery.mockjax.js"></script>
+<script src="/js/x-editable/moment.min.js"></script>
+<script src="/js/x-editable/select2.js"></script>
+<script src="/js/x-editable/bootstrap.js"></script>
+<script src="/js/x-editable/jquery-ui.js"></script>
+<script src="/js/x-editable/jqueryui-editable.js"></script>
+<script src="/js/x-editable/bootstrap-datetimepicker.js"></script>
+<script src="/js/x-editable/bootstrap-editable.js"></script>
+<script src="/js/x-editable/typeahead.js"></script>
+<script src="/js/x-editable/typeaheadjs.js"></script>
+<script src="/js/x-editable/wysihtml5-0.3.0.min.js"></script>
+<script src="/js/x-editable/bootstrap-wysihtml5-0.0.3.min.js"></script>
+<script src="/js/x-editable/wysihtml5-0.0.3.js"></script>
+<script src="/js/x-editable/address.js"></script>
+<script src="/js/x-editable/demo-mock.js"></script>
+<script src="/js/x-editable/demo.js"></script>
+<script>$('h3').addClass('hvr-pulse');</script>
+{% endblock %}

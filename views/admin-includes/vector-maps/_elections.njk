@@ -1,0 +1,51 @@
+<div class="panel">
+  <div class="panel-body">
+    <div class="row gutter-xs">
+      <div class="col-md-8 col-lg-9">
+        <div class="embed-responsive embed-responsive-4by3">
+          <div class="embed-responsive-item">
+            <div data-toggle="vector-map" data-map="usa_en" data-background-color="null" data-color="#ffffff" data-enable-zoom="true" data-hover-opacity="0.7" data-normalize-function="polynomial" data-selected-color="#666666" data-show-tooltip="true" data-colors='{"ak":"#e74c3c","al":"#e74c3c","ar":"#e74c3c","az":"#e74c3c","ca":"#2980b9","co":"#2980b9","ct":"#2980b9","dc":"#2980b9","de":"#2980b9","fl":"#2980b9","ga":"#e74c3c","hi":"#2980b9","ia":"#2980b9","id":"#e74c3c","il":"#2980b9","in":"#e74c3c","ks":"#e74c3c","ky":"#e74c3c","la":"#e74c3c","ma":"#2980b9","md":"#2980b9","me":"#2980b9","mi":"#2980b9","mn":"#2980b9","mo":"#e74c3c","ms":"#e74c3c","mt":"#e74c3c","nc":"#e74c3c","nd":"#e74c3c","ne":"#e74c3c","nh":"#2980b9","nj":"#2980b9","nm":"#2980b9","nv":"#2980b9","ny":"#2980b9","oh":"#2980b9","ok":"#e74c3c","or":"#2980b9","pa":"#2980b9","ri":"#2980b9","sc":"#e74c3c","sd":"#e74c3c","tn":"#e74c3c","tx":"#e74c3c","ut":"#e74c3c","va":"#2980b9","vt":"#2980b9","wa":"#2980b9","wi":"#2980b9","wv":"#e74c3c","wy":"#e74c3c"}' style="height: 100%; width: 100%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <h4 {{dc}}>{{Subject}}</h4>
+        <p class="lorem0"></p>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 m-y">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="rounded" width="80" height="80" src="{{avatar}}">
+              </div>
+              <div class="media-body media-middle">
+                <h4 class="media-heading" {{dc}}>{{Name}}</h4>
+                <h5 class="media-heading">{{statistics}}</h5>
+                <span class="media-text">
+                  <span style="color: #2980b9">
+                    <span class="fa fa-square fa-fw"></span>
+                  </span>{{topic}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 m-y">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="rounded" width="80" height="80" src="{{avatar}}">
+              </div>
+              <div class="media-body media-middle">
+                <h4 class="media-heading" {{dc}}>{{Name}}</h4>
+                <h5 class="media-heading">{{statistics}}</h5>
+                <span class="media-text">
+                  <span style="color: #e74c3c">
+                    <span class="fa fa-square fa-fw"></span>
+                  </span>{{topic}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>Source: <a {{dc}} href="{{JSV}}" target="_blank">Wikipedia</a></p>
+      </div>
+    </div>
+  </div>
+</div>

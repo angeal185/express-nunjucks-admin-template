@@ -1,0 +1,41 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div id="arrow1" class="row gutter-xs"></div>
+<div id="arrow2" class="row gutter-xs"></div>
+<div id="arrow3" class="row gutter-xs"></div>
+{% include "admin-includes/arrows/_arrows-hover.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>Sizes and Positions</h3>
+  <small>In addition to three different sizes of the arrow, it can also be moved to different positions.</small>
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/arrows/_large-arrow.njk" %}
+{% include "admin-includes/arrows/_small-arrow.njk" %}
+{% include "admin-includes/arrows/_default-arrow-left.njk" %}
+{% include "admin-includes/arrows/_default-arrow-right.njk" %}
+</div>
+<div class="row gutter-xs">
+  {% include "admin-includes/arrows/_arrow-top-bottom.njk" %}
+{% include "admin-includes/arrows/_arrow-left-right.njk" %}
+{% include "admin-includes/arrows/_panel-block-center.njk" %}
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>Arrow with others</h3>
+  <small>For more examples related to this component see also <a href="/badges">badges</a> and <a href="/labels">labels</a>.</small>
+</div>
+<div id="arrow4" class="row gutter-xs"></div>
+<div class="row gutter-xs">
+{% include "admin-includes/arrows/_panel-arrow-danger-left.njk" %}
+{% include "admin-includes/arrows/_panel-arrow-right.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/arrows.json"></script>
+{% endblock %}

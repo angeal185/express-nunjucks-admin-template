@@ -1,0 +1,32 @@
+﻿var transform =
+{"<>":"li","class":"file","html":[
+	{"<>":"a","class":"file-link","href":"${href}","title":"${title}.${type}","download":"${title}.${type}","html":[
+	{"<>":"div","class":"file-thumbnail file-thumbnail-${type}"},
+    {"<>":"div","class":"file-info","html":[
+			{"<>":"span","class":"file-ext","html":".${type}"},
+    	{"<>":"span","class":"file-name","html":"${title}"},
+		]},
+	]},
+]};
+
+var transform2 =
+{"<>":"li","class":"file","html":[
+	{"<>":"a","class":"file-link","href":"${href}","title":"${title}.${type}","download":"${title}.${type}","html":[
+	{"<>":"div","class":"file-thumbnail file-thumbnail-${type}"},
+    {"<>":"div","class":"file-info","html":[
+			{"<>":"span","class":"file-ext","html":".${type}"},
+    	{"<>":"span","class":"file-name","html":"${title}"},
+		  ]},
+	   ]},
+    {"<>":"button","class":"file-delete-btn delete","title":"Delete","type":"button","html":[
+      {"<>":"span","class":"fa fa-remove"},
+  ]},
+]};
+
+var data = [
+{"title":"demo-doc","type":"doc","href":"#"},
+{"title":"demo-xls","type":"xls","href":"#"},
+{"title":"demo-pdf","type":"pdf","href":"#"},
+{"title":"demo-zip","type":"zip","href":"#"},
+{"title":"demo-att","type":"att","href":"#"},
+];

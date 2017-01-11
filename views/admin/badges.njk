@@ -1,0 +1,56 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} default</h3>
+</div>
+<div id="badge1" class="row gutter-xs"></div>
+<div id="badge2" class="row gutter-xs"></div>
+<div id="badge3" class="row gutter-xs"></div>
+<div class="row gutter-xs">
+{% include "admin-includes/badges/_badge-link.njk" %}
+{% include "admin-includes/badges/_panel-body-info.njk" %}
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} with others</h3>
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/badges/_list-group.njk" %}
+{% include "admin-includes/badges/_buttons.njk" %}
+{% include "admin-includes/badges/_outline-buttons.njk" %}
+{% include "admin-includes/badges/_links.njk" %}
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/badges/_badge-arrow.njk" %}
+{% include "admin-includes/badges/_outline-badge-arrow.njk" %}
+{% include "admin-includes/badges/_badge-arrow-hover.njk" %}
+{% include "admin-includes/badges/_outline-badge-arrow-hover.njk" %}
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/badges/_badge-above.njk" %}
+{% include "admin-includes/badges/_badge-above-right.njk" %}
+{% include "admin-includes/badges/_badge-above.njk" %}
+{% include "admin-includes/badges/_badge-above-right.njk" %}
+</div>
+<div id="demo-badges" class="row gutter-xs">
+  {% include "admin-includes/badges/_badge-animate-left.njk" %}
+{% include "admin-includes/badges/_badge-animate-right.njk" %}
+{% include "admin-includes/badges/_panel-body-info2.njk" %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/badges.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("h5").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

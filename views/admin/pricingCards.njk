@@ -1,0 +1,45 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b-md">
+  <h3 class="m-b-0" {{dc}}>{{title}}</h3>
+  <small>{{header1}}</small>
+</div>
+  <div class="row gutter-xs">
+{% include "admin-includes/pricing-cards/_default-card.njk" %}
+{% include "admin-includes/pricing-cards/_default-card.njk" %}
+{% include "admin-includes/pricing-cards/_default-card.njk" %}
+{% include "admin-includes/pricing-cards/_default-card.njk" %}
+  <div class="row gutter-xs">
+{% include "admin-includes/pricing-cards/_signup.njk" %}
+{% include "admin-includes/pricing-cards/_signup.njk" %}
+{% include "admin-includes/pricing-cards/_signup.njk" %}
+{% include "admin-includes/pricing-cards/_signup.njk" %}
+  </div>
+<div class="text-center m-b-md">
+  <h3 class="m-b-0" {{dc}}>{{title}} joined</h3>
+  <small>{{header2}}</small>
+</div>
+  <div class="row gutter-xs">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row gutter-xs">
+{% include "admin-includes/pricing-cards/_joined-light.njk" %}
+{% include "admin-includes/pricing-cards/_joined-dark.njk" %}
+{% include "admin-includes/pricing-cards/_joined-light.njk" %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+  $("span").addClass("hvr-pulse");
+  $("h4").addClass("hvr-hang");
+});
+</script>
+{% endblock %}

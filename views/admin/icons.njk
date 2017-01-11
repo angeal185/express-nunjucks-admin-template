@@ -1,0 +1,66 @@
+{% extends 'layout.njk' %}
+{% block styles %}
+<link rel="stylesheet" href="/css/glyphicon.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/dark-hive/jquery-ui.css">
+{% endblock %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+{% include "admin-includes/icons/_layered-ico.njk" %}
+{% include "admin-includes/icons/_parent-child-ico.njk" %}
+{% include "admin-includes/icons/_avatar-child-ico.njk" %}
+    <div class="text-center m-b">
+      <h3 class="m-b-0">Font Awesome</h3>
+      <small>All icons listed below can be accessed using the class <code>fa</code> as well as the <code>fa-{modifier}</code>.</small>
+    </div>
+<div class="panel panel-body" id="awesome" style="list-style-type:none;"></div>
+<div class="text-center m-b">
+  <h3 class="m-b-0">Glyphicons</h3>
+  <small>All icons listed below can be accessed using the class <code>icon</code> as well as the <code>glyphicon-{modifier}</code>.</small>
+</div>
+<div class="panel panel-body" id="glyph" style="list-style-type:none;"></div>
+<div class="text-center m-b">
+  <h3 class="m-b-0">Jquery ui-icon</h3>
+  <small>All icons listed below can be accessed using the class <code>ui-icon</code> as well as the <code>ui-icon-{modifier}</code>.</small>
+</div>
+<div class="panel panel-body" id="jqui" style="list-style-type:none;"></div>
+
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/font-awesome.json"></script>
+<script src="/json/glyphicons.json"></script>
+<script src="/json/jquery-icons.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+var awesome = {"<>":"div","class":"col-md-3","html":[
+				{"<>":"li","html":[
+					{"<>":"i","class":"fa ${class}"},
+					{"<>":"span","html":" ${name}"},
+				]},
+			]};
+var glyph = {"<>":"div","class":"col-md-3","html":[
+				{"<>":"li","html":[
+					{"<>":"i","class":"glyphicon ${class}"},
+					{"<>":"span","html":" ${name}"},
+				]},
+			]};
+
+var jqui = {"<>":"div","class":"col-md-3","html":[
+				{"<>":"li","html":[
+					{"<>":"i","class":"ui-icon ${class}"},
+					{"<>":"span","html":" ${name}"},
+				]},
+			]};
+$(function(){
+    $('#awesome').json2html(data,awesome);
+    $('#glyph').json2html(data2,glyph);
+    $('#jqui').json2html(data4,jqui);
+    });
+</script>
+{% endblock %}

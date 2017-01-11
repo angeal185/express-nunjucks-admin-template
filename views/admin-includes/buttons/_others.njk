@@ -1,0 +1,101 @@
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>Button with others</h3>
+  <small>The following examples are some cases but not the only ones on how this component can be composed with others.</small>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>File upload button</h5>
+      <p>
+        <small class="text-muted"><a href="uploader.html">Click here</a> to see a real example.</small>
+      </p>
+      <label class="btn btn-success file-upload-btn">
+        Upload files
+        <input class="file-upload-input" type="file" name="files[]" multiple>
+      </label>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Buttons with arrow</h5>
+      <p>
+        <small class="text-muted">Small buttons with default size of arrow.</small>
+      </p>
+      <a class="btn btn-sm arrow-left arrow-outline-default" href="#">
+        <span class="count-text">256k</span>
+      </a>
+      <a class="btn btn-sm arrow-up arrow-default" href="#">
+        <span class="count-text">256k</span>
+      </a>
+      <a class="btn btn-sm arrow-down arrow-default" href="#">
+        <span class="count-text">256k</span>
+      </a>
+      <a class="btn btn-sm arrow-right arrow-outline-default" href="#">
+        <span class="count-text">256k</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Disabled button with spinner</h5>
+      <p>
+        <small class="text-muted">A button can show a loading indicator.</small>
+      </p>
+      <button class="btn btn-success" type="button">Save changes</button>
+      <button class="btn btn-success spinner spinner-inverse spinner-sm" type="button" disabled="disabled">Save changes</button>
+    </div>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Button with square container</h5>
+      <p>
+        <small class="text-muted">A button can have only an icon</small>
+      </p>
+      <button class="btn btn-success btn-icon sq-24" type="button">
+        <span class="fa fa-bell-o"></span>
+      </button>
+      <button class="btn btn-success btn-icon sq-32" type="button">
+        <span class="fa fa-bell-o"></span>
+      </button>
+      <button class="btn btn-outline-success btn-icon sq-32" type="button">
+        <span class="fa fa-bell-o"></span>
+      </button>
+      <button class="btn btn-outline-success btn-icon sq-24" type="button">
+        <span class="fa fa-bell-o"></span>
+      </button>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Icon button</h5>
+      <p>
+        <small>Icon button with badge above right</small>
+      </p>
+      <button class="btn btn-success btn-icon" title="You have 3 unread notifications." data-container="body" data-placement="bottom" data-toggle="tooltip" type="button">
+        <span class="fa fa-bell-o sq-32"></span>
+        <span class="badge badge-above right">3</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <div class="panel panel-body text-center">
+      <h5>Expander button</h5>
+      <p>
+        <small class="text-muted">Expander button to indicate and toggle hidden text (inspired by Primer)</small>
+      </p>
+      <h4 class="text-success">
+        Upgrading To Laravel 5.1.11
+        <a class="btn btn-success btn-expander collapsed" role="button" data-toggle="collapse" href="#laravel-upgrade">
+          &hellip;
+        </a>
+      </h4>
+      <div id="laravel-upgrade" class="collapse">
+        <p class="text-justify">
+          <small>Note: Laravel 5.1.11 includes support for authorization and policies. Incorporating these new features into your existing Laravel 5.1 applications is simple. These upgrades are optional, and ignoring them will not affect your application.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

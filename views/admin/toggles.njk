@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b col-md-12">
+  <h3 class="m-b-0" {{dc}}>Default</h3>
+  <small>{{header}}</small>
+</div>
+<div id="checkbox1" class="gutter-xs"></div>
+{% include "admin-includes/toggles/_info-panel1.njk" %}
+<div class="text-center m-b col-md-12">
+  <h3 class="m-b-0" {{dc}}>Radios</h3>
+  <small>{{header}}</small>
+</div>
+<div id="radio1" class="gutter-xs"></div>
+{% include "admin-includes/toggles/_info-panel1.njk" %}
+<div class="text-center m-b col-md-12">
+  <h3 class="m-b-0" {{dc}}>Switches</h3>
+  <small>{{header}}</small>
+</div>
+<div id="switch" class="gutter-xs"></div>
+{% include "admin-includes/toggles/_info-panel1.njk" %}
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/toggles.json"></script>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+  $("h5").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

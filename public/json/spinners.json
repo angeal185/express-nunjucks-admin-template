@@ -1,0 +1,41 @@
+﻿var data = [
+{"class":"default"},
+{"class":"primary"},
+{"class":"success"},
+{"class":"info"},
+{"class":"warning"},
+{"class":"danger"}
+];
+
+var data2 = [
+{"spin":"default","sz":"sm"},
+{"spin":"primary","sz":"sm"},
+{"spin":"default","sz":"lg"},
+{"spin":"primary","sz":"lg"}
+];
+
+var transform =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${class} spinner"},
+			{"<>":"p","html":[
+					{"<>":"small","class":"text-muted","html":"Simply use class ","html":[
+						{"<>":"code","html": "spinner-${class}"},
+					]},
+				{"<>":"div","class":"spinner spinner-${class} pos-r sq-32"},
+			]},
+		]},
+	]};
+
+var transform2 =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+  {"<>":"div","class":"panel panel-body text-center", "data-toggle":"match-height", "html":[
+    {"<>":"div","class":"spinner spinner-${spin} spinner-${sz} pos-r sq-100","html":[
+    ]},
+  ]},
+]};
+
+$(function(){
+	$('#spinnerxs').json2html(data,transform);
+  $('#spinnermd').json2html(data2,transform2);
+});

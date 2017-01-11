@@ -1,0 +1,19 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row">
+    <div class="col-md-10">
+{% include "admin-includes/form-controls/_default.njk" %}
+{% include "admin-includes/form-controls/_labels.njk" %}
+{% include "admin-includes/form-controls/_input.njk" %}
+{% include "admin-includes/form-controls/_input-groups.njk" %}
+{% include "admin-includes/form-controls/_borders.njk" %}
+{% include "admin-includes/form-controls/_custom-select.njk" %}
+{% include "admin-includes/form-controls/_icon-input.njk" %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

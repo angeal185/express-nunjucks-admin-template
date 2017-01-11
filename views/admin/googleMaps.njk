@@ -1,0 +1,15 @@
+{% extends 'layout.njk' %}
+{% block content %}
+      <div class="layout-content">
+        <div class="layout-content-body">
+          {% include "admin-includes/static-tables/_title-bar.njk" %}
+          {% include "admin-includes/google-maps/_basic-example.njk" %}
+          {% include "admin-includes/google-maps/_markers.njk" %}
+          {% include "admin-includes/google-maps/_polyline.njk" %}
+          {% include "admin-includes/google-maps/_two-point-route.njk" %}
+          {% include "admin-includes/google-maps/_steps-route.njk" %}
+          {% include "admin-includes/google-maps/_map-types.njk" %}
+        </div>
+      </div>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+{% endblock %}

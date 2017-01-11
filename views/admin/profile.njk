@@ -1,0 +1,31 @@
+{% extends 'layout.njk' %}
+{% block styles %}
+<link rel="stylesheet" href="/css/profile.css">
+{% endblock %}
+{% block content %}
+<div class="layout-content">
+<div class="profile">
+{% include "admin-includes/profile/_profile-header.njk" %}
+  <div class="profile-body">
+    <div class="profile-container">
+      <ol class="feed">
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+{% include "admin-includes/profile/_profile-feed-item.njk" %}
+      </ol>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/profile.min.js"></script>
+{% endblock %}

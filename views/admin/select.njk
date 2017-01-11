@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+{% include "admin-includes/select2/_time-zone.njk" %}
+{% include "admin-includes/select2/_roles.njk" %}
+{% include "admin-includes/select2/_languages.njk" %}
+{% include "admin-includes/select2/_country.njk" %}
+{% include "admin-includes/select2/_number.njk" %}
+{% include "admin-includes/select2/_default.njk" %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/flags.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+  $('#demo-select2-1').json2html(data2,transform3);
+  $('#demo-select2-2').json2html(data4,transform3);
+  $('#demo-select2-3').json2html(data3,transform3);
+  $('#demo-select2-4').json2html(data,transform);
+  $('#demo-select2-5').json2html(data,transform);
+});
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+  $(".panel").css({"padding":"1em","margin":"1em"});
+});
+</script>
+{% endblock %}

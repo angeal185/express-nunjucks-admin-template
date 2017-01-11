@@ -1,0 +1,36 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} default</h3>
+  <small>{{header1}}</small>
+</div>
+<div class="row">
+{% include "admin-includes/lists/_list-group.njk" %}
+{% include "admin-includes/lists/_list-group-divided.njk" %}
+{% include "admin-includes/lists/_linked-items.njk" %}
+{% include "admin-includes/lists/_custom-content.njk" %}
+{% include "admin-includes/lists/_list-group-media.njk" %}
+{% include "admin-includes/lists/_contextual-colors.njk" %}
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>Material style</h3>
+  <small>{{header2}}</small>
+</div>
+  <div class="row">
+{% include "admin-includes/lists/_material-info.njk" %}
+{% include "admin-includes/lists/_material-checkbox.njk" %}
+{% include "admin-includes/lists/_material-switch.njk" %}
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

@@ -1,0 +1,1059 @@
+	
+	var data4 = [
+	{
+	    "class": "ui-icon-blank",
+	    "name": "ui-icon-blank"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-n",
+	    "name": "ui-icon-caret-1-n"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-ne",
+	    "name": "ui-icon-caret-1-ne"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-e",
+	    "name": "ui-icon-caret-1-e"
+	},
+
+
+
+	{
+	    "class": "ui-icon-caret-1-se",
+	    "name": "ui-icon-caret-1-se"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-s",
+	    "name": "ui-icon-caret-1-s"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-sw",
+	    "name": "ui-icon-caret-1-sw"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-w",
+	    "name": "ui-icon-caret-1-w"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-1-nw",
+	    "name": "ui-icon-caret-1-nw"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-2-n-s",
+	    "name": "ui-icon-caret-2-n-s"
+	},
+
+
+	{
+	    "class": "ui-icon-caret-2-e-w",
+	    "name": "ui-icon-caret-2-e-w"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-n",
+	    "name": "ui-icon-triangle-1-n"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-ne",
+	    "name": "ui-icon-triangle-1-ne"
+	},
+
+
+
+	{
+	    "class": "ui-icon-triangle-1-e",
+	    "name": "ui-icon-triangle-1-e"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-se",
+	    "name": "ui-icon-triangle-1-se"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-s",
+	    "name": "ui-icon-triangle-1-s"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-sw",
+	    "name": "ui-icon-triangle-1-sw"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-w",
+	    "name": "ui-icon-triangle-1-w"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-1-nw",
+	    "name": "ui-icon-triangle-1-nw"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-2-n-s",
+	    "name": "ui-icon-triangle-2-n-s"
+	},
+
+
+	{
+	    "class": "ui-icon-triangle-2-e-w",
+	    "name": "ui-icon-triangle-2-e-w"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-n",
+	    "name": "ui-icon-arrow-1-n"
+	},
+
+
+
+	{
+	    "class": "ui-icon-arrow-1-ne",
+	    "name": "ui-icon-arrow-1-ne"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-e",
+	    "name": "ui-icon-arrow-1-e"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-se",
+	    "name": "ui-icon-arrow-1-se"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-s",
+	    "name": "ui-icon-arrow-1-s"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-sw",
+	    "name": "ui-icon-arrow-1-sw"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-w",
+	    "name": "ui-icon-arrow-1-w"
+	},
+
+
+	{
+	    "class": "ui-icon-arrow-1-nw",
+	    "name": "ui-icon-arrow-1-nw"
+	},
+
+	{
+	        "class": "ui-icon-arrow-2-n-s",
+	        "name": "ui-icon-arrow-2-n-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrow-2-ne-sw",
+	        "name": "ui-icon-arrow-2-ne-sw"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-arrow-2-e-w",
+	        "name": "ui-icon-arrow-2-e-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrow-2-se-nw",
+	        "name": "ui-icon-arrow-2-se-nw"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowstop-1-n",
+	        "name": "ui-icon-arrowstop-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowstop-1-e",
+	        "name": "ui-icon-arrowstop-1-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowstop-1-s",
+	        "name": "ui-icon-arrowstop-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowstop-1-w",
+	        "name": "ui-icon-arrowstop-1-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-n",
+	        "name": "ui-icon-arrowthick-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-ne",
+	        "name": "ui-icon-arrowthick-1-ne"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-e",
+	        "name": "ui-icon-arrowthick-1-e"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-se",
+	        "name": "ui-icon-arrowthick-1-se"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-s",
+	        "name": "ui-icon-arrowthick-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-sw",
+	        "name": "ui-icon-arrowthick-1-sw"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-w",
+	        "name": "ui-icon-arrowthick-1-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-1-nw",
+	        "name": "ui-icon-arrowthick-1-nw"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-2-n-s",
+	        "name": "ui-icon-arrowthick-2-n-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-2-ne-sw",
+	        "name": "ui-icon-arrowthick-2-ne-sw"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-2-e-w",
+	        "name": "ui-icon-arrowthick-2-e-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthick-2-se-nw",
+	        "name": "ui-icon-arrowthick-2-se-nw"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-arrowthickstop-1-n",
+	        "name": "ui-icon-arrowthickstop-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthickstop-1-e",
+	        "name": "ui-icon-arrowthickstop-1-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthickstop-1-s",
+	        "name": "ui-icon-arrowthickstop-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowthickstop-1-w",
+	        "name": "ui-icon-arrowthickstop-1-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturnthick-1-w",
+	        "name": "ui-icon-arrowreturnthick-1-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturnthick-1-n",
+	        "name": "ui-icon-arrowreturnthick-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturnthick-1-e",
+	        "name": "ui-icon-arrowreturnthick-1-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturnthick-1-s",
+	        "name": "ui-icon-arrowreturnthick-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturn-1-w",
+	        "name": "ui-icon-arrowreturn-1-w"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-arrowreturn-1-n",
+	        "name": "ui-icon-arrowreturn-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturn-1-e",
+	        "name": "ui-icon-arrowreturn-1-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowreturn-1-s",
+	        "name": "ui-icon-arrowreturn-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowrefresh-1-w",
+	        "name": "ui-icon-arrowrefresh-1-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowrefresh-1-n",
+	        "name": "ui-icon-arrowrefresh-1-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowrefresh-1-e",
+	        "name": "ui-icon-arrowrefresh-1-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrowrefresh-1-s",
+	        "name": "ui-icon-arrowrefresh-1-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrow-4",
+	        "name": "ui-icon-arrow-4"
+	    },
+
+
+	    {
+	        "class": "ui-icon-arrow-4-diag",
+	        "name": "ui-icon-arrow-4-diag"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-extlink",
+	        "name": "ui-icon-extlink"
+	    },
+
+
+	    {
+	        "class": "ui-icon-newwin",
+	        "name": "ui-icon-newwin"
+	    },
+
+
+	    {
+	        "class": "ui-icon-refresh",
+	        "name": "ui-icon-refresh"
+	    },
+
+
+	    {
+	        "class": "ui-icon-shuffle",
+	        "name": "ui-icon-shuffle"
+	    },
+
+
+	    {
+	        "class": "ui-icon-transfer-e-w",
+	        "name": "ui-icon-transfer-e-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-transferthick-e-w",
+	        "name": "ui-icon-transferthick-e-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-folder-collapsed",
+	        "name": "ui-icon-folder-collapsed"
+	    },
+
+	    {
+	        "class": "ui-icon-folder-open",
+	        "name": "ui-icon-folder-open"
+	    },
+
+
+	    {
+	        "class": "ui-icon-document",
+	        "name": "ui-icon-document"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-document-b",
+	        "name": "ui-icon-document-b"
+	    },
+
+
+	    {
+	        "class": "ui-icon-note",
+	        "name": "ui-icon-note"
+	    },
+
+	    {
+	        "class": "ui-icon-mail-closed",
+	        "name": "ui-icon-mail-closed"
+	    },
+
+
+	    {
+	        "class": "ui-icon-mail-open",
+	        "name": "ui-icon-mail-open"
+	    },
+
+
+	    {
+	        "class": "ui-icon-suitcase",
+	        "name": "ui-icon-suitcase"
+	    },
+
+
+	    {
+	        "class": "ui-icon-comment",
+	        "name": "ui-icon-comment"
+	    },
+
+
+	    {
+	        "class": "ui-icon-person",
+	        "name": "ui-icon-person"
+	    },
+
+
+	    {
+	        "class": "ui-icon-print",
+	        "name": "ui-icon-print"
+	    },
+
+
+	    {
+	        "class": "ui-icon-trash",
+	        "name": "ui-icon-trash"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-locked",
+	        "name": "ui-icon-locked"
+	    },
+
+
+	    {
+	        "class": "ui-icon-unlocked",
+	        "name": "ui-icon-unlocked"
+	    },
+
+
+	    {
+	        "class": "ui-icon-bookmark",
+	        "name": "ui-icon-bookmark"
+	    },
+
+
+	    {
+	        "class": "ui-icon-tag",
+	        "name": "ui-icon-tag"
+	    },
+
+
+	    {
+	        "class": "ui-icon-home",
+	        "name": "ui-icon-home"
+	    },
+
+
+	    {
+	        "class": "ui-icon-flag",
+	        "name": "ui-icon-flag"
+	    },
+
+
+	    {
+	        "class": "ui-icon-calculator",
+	        "name": "ui-icon-calculator"
+	    },
+
+
+	    {
+	        "class": "ui-icon-cart",
+	        "name": "ui-icon-cart"
+	    },
+
+
+	    {
+	        "class": "ui-icon-pencil",
+	        "name": "ui-icon-pencil"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-clock",
+	        "name": "ui-icon-clock"
+	    },
+
+
+	    {
+	        "class": "ui-icon-disk",
+	        "name": "ui-icon-disk"
+	    },
+
+
+	    {
+	        "class": "ui-icon-calendar",
+	        "name": "ui-icon-calendar"
+	    },
+
+
+	    {
+	        "class": "ui-icon-zoomin",
+	        "name": "ui-icon-zoomin"
+	    },
+
+
+	    {
+	        "class": "ui-icon-zoomout",
+	        "name": "ui-icon-zoomout"
+	    },
+
+
+	    {
+	        "class": "ui-icon-search",
+	        "name": "ui-icon-search"
+	    },
+
+
+	    {
+	        "class": "ui-icon-wrench",
+	        "name": "ui-icon-wrench"
+	    },
+
+
+	    {
+	        "class": "ui-icon-gear",
+	        "name": "ui-icon-gear"
+	    },
+
+
+	    {
+	        "class": "ui-icon-heart",
+	        "name": "ui-icon-heart"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-star",
+	        "name": "ui-icon-star"
+	    },
+
+
+	    {
+	        "class": "ui-icon-link",
+	        "name": "ui-icon-link"
+	    },
+
+
+	    {
+	        "class": "ui-icon-cancel",
+	        "name": "ui-icon-cancel"
+	    },
+
+
+	    {
+	        "class": "ui-icon-plus",
+	        "name": "ui-icon-plus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-plusthick",
+	        "name": "ui-icon-plusthick"
+	    },
+
+
+	    {
+	        "class": "ui-icon-minus",
+	        "name": "ui-icon-minus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-minusthick",
+	        "name": "ui-icon-minusthick"
+	    },
+
+
+	    {
+	        "class": "ui-icon-close",
+	        "name": "ui-icon-close"
+	    },
+
+
+	    {
+	        "class": "ui-icon-closethick",
+	        "name": "ui-icon-closethick"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-key",
+	        "name": "ui-icon-key"
+	    },
+
+
+	    {
+	        "class": "ui-icon-lightbulb",
+	        "name": "ui-icon-lightbulb"
+	    },
+
+
+	    {
+	        "class": "ui-icon-scissors",
+	        "name": "ui-icon-scissors"
+	    },
+
+
+	    {
+	        "class": "ui-icon-clipboard",
+	        "name": "ui-icon-clipboard"
+	    },
+
+
+	    {
+	        "class": "ui-icon-copy",
+	        "name": "ui-icon-copy"
+	    },
+
+
+	    {
+	        "class": "ui-icon-contact",
+	        "name": "ui-icon-contact"
+	    },
+
+
+	    {
+	        "class": "ui-icon-image",
+	        "name": "ui-icon-image"
+	    },
+
+
+	    {
+	        "class": "ui-icon-video",
+	        "name": "ui-icon-video"
+	    },
+
+
+	    {
+	        "class": "ui-icon-script",
+	        "name": "ui-icon-script"
+	    },
+
+
+	    {
+	        "class": "ui-icon-alert",
+	        "name": "ui-icon-alert"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-info",
+	        "name": "ui-icon-info"
+	    },
+
+
+	    {
+	        "class": "ui-icon-notice",
+	        "name": "ui-icon-notice"
+	    },
+
+
+	    {
+	        "class": "ui-icon-help",
+	        "name": "ui-icon-help"
+	    },
+
+
+	    {
+	        "class": "ui-icon-check",
+	        "name": "ui-icon-check"
+	    },
+
+
+	    {
+	        "class": "ui-icon-bullet",
+	        "name": "ui-icon-bullet"
+	    },
+
+
+	    {
+	        "class": "ui-icon-radio-off",
+	        "name": "ui-icon-radio-off"
+	    },
+
+
+	    {
+	        "class": "ui-icon-radio-on",
+	        "name": "ui-icon-radio-on"
+	    },
+
+
+	    {
+	        "class": "ui-icon-pin-w",
+	        "name": "ui-icon-pin-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-pin-s",
+	        "name": "ui-icon-pin-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-play",
+	        "name": "ui-icon-play"
+	    },
+
+
+	    {
+	        "class": "ui-icon-pause",
+	        "name": "ui-icon-pause"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-seek-next",
+	        "name": "ui-icon-seek-next"
+	    },
+
+
+	    {
+	        "class": "ui-icon-seek-prev",
+	        "name": "ui-icon-seek-prev"
+	    },
+
+
+	    {
+	        "class": "ui-icon-seek-end",
+	        "name": "ui-icon-seek-end"
+	    },
+
+
+	    {
+	        "class": "ui-icon-seek-first",
+	        "name": "ui-icon-seek-first"
+	    },
+
+
+	    {
+	        "class": "ui-icon-stop",
+	        "name": "ui-icon-stop"
+	    },
+
+
+	    {
+	        "class": "ui-icon-eject",
+	        "name": "ui-icon-eject"
+	    },
+
+
+	    {
+	        "class": "ui-icon-volume-off",
+	        "name": "ui-icon-volume-off"
+	    },
+
+
+	    {
+	        "class": "ui-icon-volume-on",
+	        "name": "ui-icon-volume-on"
+	    },
+
+
+	    {
+	        "class": "ui-icon-power",
+	        "name": "ui-icon-power"
+	    },
+
+
+	    {
+	        "class": "ui-icon-signal-diag",
+	        "name": "ui-icon-signal-diag"
+	    },
+
+
+	    {
+	        "class": "ui-icon-signal",
+	        "name": "ui-icon-signal"
+	    },
+
+
+	    {
+	        "class": "ui-icon-battery-0",
+	        "name": "ui-icon-battery-0"
+	    },
+
+
+	    {
+	        "class": "ui-icon-battery-1",
+	        "name": "ui-icon-battery-1"
+	    },
+
+
+	    {
+	        "class": "ui-icon-battery-2",
+	        "name": "ui-icon-battery-2"
+	    },
+
+
+	    {
+	        "class": "ui-icon-battery-3",
+	        "name": "ui-icon-battery-3"
+	    },
+
+	    {
+	        "class": "ui-icon-circle-plus",
+	        "name": "ui-icon-circle-plus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-minus",
+	        "name": "ui-icon-circle-minus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-close",
+	        "name": "ui-icon-circle-close"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-circle-triangle-e",
+	        "name": "ui-icon-circle-triangle-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-triangle-s",
+	        "name": "ui-icon-circle-triangle-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-triangle-w",
+	        "name": "ui-icon-circle-triangle-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-triangle-n",
+	        "name": "ui-icon-circle-triangle-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-arrow-e",
+	        "name": "ui-icon-circle-arrow-e"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-arrow-s",
+	        "name": "ui-icon-circle-arrow-s"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-arrow-w",
+	        "name": "ui-icon-circle-arrow-w"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-arrow-n",
+	        "name": "ui-icon-circle-arrow-n"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-zoomin",
+	        "name": "ui-icon-circle-zoomin"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-circle-zoomout",
+	        "name": "ui-icon-circle-zoomout"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circle-check",
+	        "name": "ui-icon-circle-check"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circlesmall-plus",
+	        "name": "ui-icon-circlesmall-plus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circlesmall-minus",
+	        "name": "ui-icon-circlesmall-minus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-circlesmall-close",
+	        "name": "ui-icon-circlesmall-close"
+	    },
+
+
+	    {
+	        "class": "ui-icon-squaresmall-plus",
+	        "name": "ui-icon-squaresmall-plus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-squaresmall-minus",
+	        "name": "ui-icon-squaresmall-minus"
+	    },
+
+
+	    {
+	        "class": "ui-icon-squaresmall-close",
+	        "name": "ui-icon-squaresmall-close"
+	    },
+
+
+	    {
+	        "class": "ui-icon-grip-dotted-vertical",
+	        "name": "ui-icon-grip-dotted-vertical"
+	    },
+
+
+
+	    {
+	        "class": "ui-icon-grip-dotted-horizontal",
+	        "name": "ui-icon-grip-dotted-horizontal"
+	    },
+
+
+	    {
+	        "class": "ui-icon-grip-solid-vertical",
+	        "name": "ui-icon-grip-solid-vertical"
+	    },
+
+
+	    {
+	        "class": "ui-icon-grip-solid-horizontal",
+	        "name": "ui-icon-grip-solid-horizontal"
+	    },
+
+
+	    {
+	        "class": "ui-icon-gripsmall-diagonal-se",
+	        "name": "ui-icon-gripsmall-diagonal-se"
+	    },
+
+
+	    {
+	        "class": "ui-icon-grip-diagonal-se",
+	        "name": "ui-icon-grip-diagonal-se"
+	    },
+		];

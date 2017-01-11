@@ -1,0 +1,27 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+{% include "admin-includes/progress-bars/_default.njk" %}
+{% include "admin-includes/progress-bars/_sizes.njk" %}
+{% include "admin-includes/progress-bars/_animated.njk" %}
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/progress-bars.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+  $('#default').json2html(data,transform);
+});
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+  $("h4").addClass("hvr-push");
+});
+</script>
+{% endblock %}

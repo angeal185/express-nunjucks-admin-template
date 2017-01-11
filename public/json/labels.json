@@ -1,0 +1,28 @@
+﻿var transform =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${type} label"},
+	  {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+			 {"<>":"code","html":"label-${type}"},
+		  ]},
+		]},
+		{"<>":"span","class":"hvr-buzz label label-${type}","html":"add data here"},
+	 ]},
+  ]};
+ 
+
+var data = [
+{"type":"default"},
+{"type":"primary"},
+{"type":"success"},
+{"type":"info"},
+{"type":"warning"},
+{"type":"danger"},
+{"type":"outline-danger"},
+{"type":"outline-warning"},
+{"type":"outline-default"},
+{"type":"outline-primary"},
+{"type":"outline-success"},
+{"type":"outline-info"}
+];

@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+    {% include "admin-includes/static-tables/_title-bar.njk" %}
+    <div class="row gutter-xs">
+      {% include "admin-includes/charts/_demo-1.njk" %}
+      {% include "admin-includes/charts/_demo-2.njk" %}
+      {% include "admin-includes/charts/_demo-3.njk" %}
+      {% include "admin-includes/charts/_demo-4.njk" %}
+    </div>
+    <div class="row gutter-xs">
+      {% include "admin-includes/charts/_demo-5.njk" %}
+      {% include "admin-includes/charts/_demo-6.njk" %}
+    </div>
+    <div class="row gutter-xs">
+      {% include "admin-includes/charts/_demo-7.njk" %}
+      {% include "admin-includes/charts/_demo-8.njk" %}
+    </div>
+    <div class="row gutter-xs">
+      {% include "admin-includes/charts/_demo-9.njk" %}
+      {% include "admin-includes/charts/_demo-10.njk" %}
+    </div>
+    <div class="row gutter-xs">
+      {% include "admin-includes/charts/_demo-11.njk" %}
+      {% include "admin-includes/charts/_demo-12.njk" %}
+    </div>
+    <div class="text-center m-b">
+      <h3 class="m-b-0" {{dc}}>Complex Charts</h3>
+      <small>Charts below make use of JavaScript</small>
+    </div>
+    {% include "admin-includes/charts/_demo-13.njk" %}
+    {% include "admin-includes/charts/_demo-14.njk" %}
+    {% include "admin-includes/charts/_demo-15.njk" %}
+    {% include "admin-includes/charts/_demo-16.njk" %}
+  </div>
+</div>
+{% endblock %}

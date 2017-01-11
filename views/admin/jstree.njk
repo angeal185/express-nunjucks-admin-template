@@ -1,0 +1,28 @@
+{% extends 'layout.njk' %}
+{% block styles %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.css" />
+<link rel="stylesheet" href="/css/jstree.css" />
+{% endblock %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="row">
+{% include "admin-includes/jstree/_js-array.njk" %}
+{% include "admin-includes/jstree/_js-edit.njk" %}
+</div>
+<div class="row">
+{% include "admin-includes/jstree/_js-json.njk" %}
+{% include "admin-includes/jstree/_js-drag.njk" %}
+</div>
+<div class="row">
+{% include "admin-includes/jstree/_js-checkbox.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+<script src="/js/jstree-data.js"></script>
+{% endblock %}

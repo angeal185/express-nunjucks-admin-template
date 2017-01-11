@@ -1,0 +1,37 @@
+<div class="cropper-toolbar">
+  <div class="btn-group">
+    <button class="btn btn-link link-muted hidden-xs" title="Move" data-option="move" data-method="setDragMode" type="button">
+      <span class="fa fa-arrows fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted hidden-xs" title="Crop" data-option="crop" data-method="setDragMode" type="button">
+      <span class="fa fa-crop fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Zoom In" data-option="0.1" data-method="zoom" type="button">
+      <span class="fa fa-search-plus fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Zoom Out" data-option="-0.1" data-method="zoom" type="button">
+      <span class="fa fa-search-minus fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Rotate Left" data-option="-45" data-method="rotate" type="button">
+      <span class="fa fa-rotate-left fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Rotate Right" data-option="45" data-method="rotate" type="button">
+      <span class="fa fa-rotate-right fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Flip Horizontal" data-option="-1" data-method="scaleX" type="button">
+      <span class="fa fa-arrows-h fa-lg"></span>
+    </button>
+    <button class="btn btn-link link-muted" title="Flip Vertical" data-option="-1" data-method="scaleY" type="button">
+      <span class="fa fa-arrows-v fa-lg"></span>
+    </button>
+    <div class="btn-group dropup">
+      <button class="btn btn-link link-muted" aria-haspopup="true" data-toggle="dropdown" type="button">
+        <span class="fa fa-th fa-lg"></span>
+      </button>
+      {% include "admin-includes/cropper/_dropdown-menu.njk" %}
+    </div>
+    <button class="btn btn-link link-muted" title="Crop" data-method="crop" type="button">
+      <span class="fa fa-check fa-lg"></span>
+    </button>
+  </div>
+</div>

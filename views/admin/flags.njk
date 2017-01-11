@@ -1,0 +1,27 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      {% include "admin-includes/flags/_flags-form.njk" %}
+      {% include "admin-includes/flags/_flags-table.njk" %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/flags.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+    $('#demo-select2-5').json2html(data,transform);
+    $('#flagsDemo').json2html(data,transform2);
+  });
+</script>
+{% endblock %}

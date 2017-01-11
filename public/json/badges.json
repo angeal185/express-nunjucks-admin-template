@@ -1,0 +1,77 @@
+﻿
+var data = [
+{"title":"badge-default"},
+{"title":"badge-primary"},
+{"title":"badge-success"},
+{"title":"badge-info"}
+];
+
+var data2 = [
+{"title":"badge-warning"},
+{"title":"badge-danger"},
+{"title":"badge-outline-danger"},
+{"title":"badge-outline-warning"}
+];
+
+var data3 = [
+{"title":"badge-outline-info"},
+{"title":"badge-outline-success"},
+{"title":"badge-outline-primary"},
+{"title":"badge-outline-default"}
+];
+
+var data4 = [	
+{"class":"badge-default","number":"1"},
+{"class":"badge-primary","number":"2"},
+{"class":"badge-success","number":"3"},
+{"class":"badge-info","number":"4"},
+{"class":"badge-warning","number":"5"},
+{"class":"badge-danger","number":"6"},
+{"class":"badge-outline-danger","number":"7"},
+{"class":"badge-outline-warning","number":"8"},
+{"class":"badge-outline-info","number":"9"},
+{"class":"badge-outline-success","number":"10"},
+{"class":"badge-outline-primary","number":"11"},
+{"class":"badge-outline-default","number":"12"},
+];
+
+var transform =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${title}"},
+		{"<>":"p","html":[
+			{"<>":"small","class":"text-muted","html":[
+				{"<>":"code","html":"${title}"}
+          ]},
+        ]},
+        {"<>":"span","class":"badge ${title}","html":"1"},
+        {"<>":"span","class":"badge ${title}","html":"11"},
+        {"<>":"span","class":"badge ${title}","html":"111"},
+		 ]}
+	]};
+	
+var transform2 =	
+{"<>":"a","class":"badge ${class}","href":"#","html":"${number}"};
+	
+var transform3 =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"Button with arrow"},
+      {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+             {"<>":"code","html":"${title}"},
+          ]},
+        ]},
+        {"<>":"a","class":"btn btn-sm ${title} ${type} pos-r","html":[
+          {"<>":"span","class":"count-text","html":"000"},
+          
+        ]},
+		 ]},
+	]};	
+	
+$(function(){
+	$('#badge1').json2html(data,transform);
+	$('#badge2').json2html(data2,transform);
+	$('#badge3').json2html(data3,transform);
+	$('#badge4').json2html(data4,transform2);
+});

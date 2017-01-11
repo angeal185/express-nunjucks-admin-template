@@ -1,0 +1,49 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} default</h3>
+</div>
+<div id="defaultLabels" class="row gutter-xs"></div>
+<div class="row gutter-xs">
+{% include "admin-includes/labels/_pill-label.njk" %}
+{% include "admin-includes/labels/_info-panel.njk" %}
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} with others</h3>
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/labels/_arrow-links.njk" %}
+{% include "admin-includes/labels/_label-tag.njk" %}
+{% include "admin-includes/labels/_icon-button.njk" %}
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/labels/_arrow-left-danger.njk" %}
+{% include "admin-includes/labels/_arrow-left-warning.njk" %}
+{% include "admin-includes/labels/_arrow-right-success.njk" %}
+{% include "admin-includes/labels/_arrow-right-info.njk" %}
+</div>
+<div class="row gutter-xs">
+  {% include "admin-includes/labels/_arrow-label-pill.njk" %}
+  {% include "admin-includes/labels/_label-panel.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/labels.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+  $('#defaultLabels').json2html(data,transform);
+});
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

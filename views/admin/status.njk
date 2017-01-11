@@ -1,0 +1,174 @@
+<html>
+<head>
+<script src="/js/Chart.bundle.min.js"></script>
+<script src="/js/socket.io.min.js"></script>
+<style>
+    * {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  color: #222;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+  color: #888;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  font-size: 0.7em;
+  color: #888;
+}
+
+span {
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 5px;
+  border: 1px solid #DDD;
+  padding: 3px 10px 4px 10px;
+}
+
+canvas {
+  width: 400px;
+  height: 100px;
+}
+
+.content {
+  width: 600px;
+  margin: auto;
+}
+
+.active {
+  background: #eeeeee;
+}
+
+.stats-column {
+  flex: 0 0 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 100px;
+}
+
+.chart-container {
+  width: 400px;
+  height: 100px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.span-controls {
+  float: right;
+}
+
+.status-code {
+  margin-top: 2px;
+}
+
+.status-code:before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.status-code-2xx:before {
+  background-color: #75D701;
+}
+
+.status-code-3xx:before {
+  background-color: #47b8e0;
+}
+
+.status-code-4xx:before {
+  background-color: #ffc952;
+}
+
+.status-code-5xx:before {
+  background-color: #E53A40;
+}
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="header">
+    <b>title</b>
+    <div id="span-controls" class="span-controls">
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>CPU Usage</h5>
+      <h1 id="cpuStat">- %</h1>
+    </div>
+    <div class="chart-container">
+      <canvas id="cpuChart" width="400" height="100"></canvas>
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>Memory Usage</h5>
+      <h1 id="memStat">- %</h1>
+    </div>
+    <div class="chart-container">
+      <canvas id="memChart" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>One Minute Load Avg</h5>
+      <h1 id="loadStat">-</h1>
+    </div>
+    <div class="chart-container">
+      <canvas id="loadChart" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>Response Time</h5>
+      <h1 id="responseTimeStat">-</h1>
+    </div>
+    <div class="chart-container">
+      <canvas id="responseTimeChart" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>Requests per Second</h5>
+      <h1 id="rpsStat">-</h1>
+    </div>
+    <div class="chart-container">
+      <canvas id="rpsChart" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="container">
+    <div class="stats-column">
+      <h5>Status Codes</h5>
+      <h6 class="status-code status-code-2xx">2xx</h6>
+      <h6 class="status-code status-code-3xx">3xx</h6>
+      <h6 class="status-code status-code-4xx">4xx</h6>
+      <h6 class="status-code status-code-5xx">5xx</h6>
+    </div>
+    <div class="chart-container">
+      <canvas id="statusCodesChart" width="200" height="100"></canvas>
+    </div>
+  </div>
+</div>
+<script src="/js/status.js"></script>
+<script>var port = {{port}};</script>
+</body>
+</html>

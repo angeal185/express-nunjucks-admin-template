@@ -1,0 +1,18 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="demo-cropper" class="cropper">
+          <div class="cropper-img">
+            <img id="demo-cropper-img" class="img-responsive" src="{{avatar}}" alt="Cropper image">
+          </div>
+          {% include "admin-includes/cropper/_cropper-toolbar.njk" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="demo-md-form-wrapper">
+{% include "admin-includes/md-form-controls/_text-input.njk" %}
+{% include "admin-includes/md-form-controls/_forms.njk" %}
+      </div>
+{% include "admin-includes/md-form-controls/_email.njk" %}
+{% include "admin-includes/md-form-controls/_sizes.njk" %}
+{% include "admin-includes/md-form-controls/_help.njk" %}
+{% include "admin-includes/md-form-controls/_states.njk" %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/flags.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+  $('#select1').json2html(data2,transform3);
+  $('#select2').json2html(data5,transform3);
+  $('#select3').json2html(data6,transform3);
+  $('#select4').json2html(data7,transform3);
+});
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+  $(".panel").css({"padding":"1em","margin":"1em"});
+});
+</script>
+{% endblock %}

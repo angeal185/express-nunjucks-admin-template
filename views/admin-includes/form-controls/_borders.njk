@@ -1,0 +1,91 @@
+<div class="demo-form-wrapper">
+  <form class="form form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-18">Thick border</label>
+      <div class="col-sm-9">
+        <input id="form-control-18" class="form-control input-thick" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-19">Rounded corners</label>
+      <div class="col-sm-9">
+        <input id="form-control-19" class="form-control input-pill" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-20">Input with contrast</label>
+      <div class="col-sm-9">
+        <input id="form-control-20" class="form-control input-contrast" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-21">Custom select</label>
+      <div class="col-sm-9">
+        <select id="form-control-21" class="custom-select">
+          <option value="" selected="selected">{{Name}}</option>
+          <option value="c-plus-plus">{{Name}}</option>
+          <option value="css">{{Name}}</option>
+          <option value="java">{{Name}}</option>
+          <option value="javascript">{{Name}}</option>
+          <option value="php">{{Name}}</option>
+          <option value="python">{{Name}}</option>
+          <option value="ruby">{{Name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="form-control-22">Custom file</label>
+      <div class="col-sm-9">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="No file chosen">
+          <span class="input-group-btn">
+            <label class="btn btn-primary file-upload-btn">
+              <input id="form-control-22" class="file-upload-input" type="file" name="file">
+              <span class="fa fa-paperclip fa-lg"></span>
+            </label>
+          </span>
+        </div>
+        <p class="help-block">
+          <small>Click the button next to the input field.</small>
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label">Custom checkboxes,
+        <br>radios and switches</label>
+      <div class="col-sm-9">
+        <div class="custom-controls-stacked m-t">
+          <label class="custom-control custom-control-primary custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="mode" checked="checked">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-label">{{Subject}}</span>
+          </label>
+          <label class="custom-control custom-control-primary custom-radio">
+            <input class="custom-control-input" type="radio" name="message" value="none">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-label">{{Subject}}</span>
+          </label>
+          <label class="custom-control custom-control-primary custom-radio">
+            <input class="custom-control-input" type="radio" name="message" value="all" checked="checked">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-label">{{Subject}}</span>
+          </label>
+          <label class="custom-control custom-control-primary custom-radio">
+            <input class="custom-control-input" type="radio" name="message" value="some">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-label">{{Subject}}</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-3">
+        <label class="switch switch-primary">
+          <input class="switch-input" type="checkbox" checked="checked">
+          <span class="switch-track"></span>
+          <span class="switch-thumb"></span>
+        </label>
+      </div>
+    </div>
+  </form>
+</div>

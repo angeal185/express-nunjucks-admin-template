@@ -1,0 +1,44 @@
+{% extends 'base.njk' %}
+{% block styles %}
+<style>
+html {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="signup">
+<div class="signup-body panel">
+<h1 {{dc}} style="text-align:center;">{{title}}</h1>
+<hr>
+{% include "admin-includes/signup/_signup-social.njk" %}
+<div class="signup-divider">
+  <div class="divider">
+    <div class="divider-content">OR</div>
+  </div>
+</div>
+<form id="signup-form" method="POST" class="form-horizontal"><input type="hidden" name="_csrf" value="{{_csrf}}">
+  <div class="form-group"><label for="email" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-7"><input type="email" name="email" id="email" placeholder="Email" autofocus required class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="password" class="col-sm-3 control-label">Password</label>
+    <div class="col-sm-7"><input type="password" name="password" id="password" placeholder="Password" required class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="confirmPassword" class="col-sm-3 control-label">Confirm Password</label>
+    <div class="col-sm-7"><input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required class="form-control"></div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-7"><button type="submit" class="btn btn-success btn-block">Signup</button></div>
+  </div>
+  {% include "admin-includes/signup/_signup-footer.njk" %}
+</form>
+</div>
+
+</div>
+{% endblock %}

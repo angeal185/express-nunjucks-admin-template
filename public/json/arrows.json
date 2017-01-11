@@ -1,0 +1,71 @@
+﻿var data = [
+{"title":"arrow-default"},
+{"title":"arrow-primary"},
+{"title":"arrow-success"},
+{"title":"arrow-info"}
+];
+
+var data2 = [
+{"title":"arrow-warning"},
+{"title":"arrow-danger"},
+{"title":"arrow-outline-danger"},
+{"title":"arrow-outline-warning"}
+];
+
+var data3 = [
+{"title":"arrow-outline-info"},
+{"title":"arrow-outline-success"},
+{"title":"arrow-outline-primary"},
+{"title":"arrow-outline-default"}
+];
+
+var data4 = [
+{"title":"arrow-left","type":"arrow-outline-default"},
+{"title":"arrow-right","type":"arrow-default"},
+{"title":"arrow-up","type":"arrow-outline-default"},
+{"title":"arrow-down","type":"arrow-default"}
+];
+ 
+var transform =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${title}"},
+      {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+             {"<>":"code","html":"${title}"}
+          ]},
+        ]},
+        {"<>":"span","class":"${title} border pos-r sq-36","html":[
+          {"<>":"span","class":"arrow-up ${title}"},
+          {"<>":"span","class":"arrow-right ${title}"},
+          {"<>":"span","class":"arrow-down ${title}"},
+          {"<>":"span","class":"arrow-left ${title}"},
+        ]},
+		 ]},
+	]};
+	
+	
+var transform2 =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"Button with arrow"},
+      {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+             {"<>":"code","html":"${title}"},
+          ]},
+        ]},
+        {"<>":"a","class":"btn btn-sm ${title} ${type} pos-r","html":[
+          {"<>":"span","class":"count-text","html":"000"},
+          
+        ]},
+		 ]},
+	]};
+
+  
+  
+  $(function(){
+  	$('#arrow1').json2html(data,transform);
+    $('#arrow2').json2html(data2,transform);
+    $('#arrow3').json2html(data3,transform);
+	$('#arrow4').json2html(data4,transform2);
+  });

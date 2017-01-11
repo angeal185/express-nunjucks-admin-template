@@ -1,0 +1,31 @@
+{% extends 'layout.njk' %}
+{% block content %}
+
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+    <div class="row pos-r">
+      <div class="col-sm-6">
+        <div class="row">
+{% include "admin-includes/dividers/_dummy-content.njk" %}
+{% include "admin-includes/dividers/_divider-vertical.njk" %}
+{% include "admin-includes/dividers/_dummy-content.njk" %}
+        </div>
+      </div>
+{% include "admin-includes/dividers/_divider-vertical.njk" %}
+      <div class="col-sm-6">
+        <div class="row">
+{% include "admin-includes/dividers/_dummy-content.njk" %}
+{% include "admin-includes/dividers/_divider-vertical.njk" %}
+{% include "admin-includes/dividers/_dummy-content.njk" %}
+        </div>
+      </div>
+    </div>
+    <div class="p-y-lg"></div>
+    <div class="text-center m-b">
+      <h3 class="m-b-0" {{dc}}>Horizontal {{title}}</h3>
+    </div>
+{% include "admin-includes/dividers/_form.njk" %}
+  </div>
+</div>
+{% endblock %}

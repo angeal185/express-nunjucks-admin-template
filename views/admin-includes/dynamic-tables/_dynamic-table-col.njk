@@ -1,0 +1,36 @@
+<tr>
+  <td>
+    <label class="custom-control custom-control-primary custom-checkbox">
+      <input class="custom-control-input" type="checkbox">
+      <span class="custom-control-indicator"></span>
+    </label>
+  </td>
+  <td data-order="{{Name}}">
+    <span class="icon-with-child m-r">
+      <img class="circle" width="36" height="36" src="{{avatar}}">
+      <span class="icon-child bg-warning circle sq-8"></span>
+    </span>
+    <strong>{{Name}}</strong>
+  </td>
+  <td class="maw-320">
+    <span class="truncate">{{Subject}}</span>
+  </td>
+  <td>{{Date}}</td>
+  <td data-order="1">
+    <span class="label label-info label-pill">{{Status}}</span>
+  </td>
+  <td data-order="3">{{Priority}}</td>
+  <td data-order="1">{{Name}}</td>
+  <td>
+    <div class="btn-group pull-right dropdown">
+      <button class="btn btn-link link-muted" aria-haspopup="true" data-toggle="dropdown" type="button">
+        <span class="fa fa-ellipsis-h fa-lg fa-fw"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">{{Assign}}</a></li>
+        <li><a href="#">{{Flag}}</a></li>
+        <li><a href="#">{{Spam}}</a></li>
+      </ul>
+    </div>
+  </td>
+</tr>

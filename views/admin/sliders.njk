@@ -1,0 +1,40 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{header1}}</h3>
+  <small>{{sub1}}</small>
+</div>
+<div class="row gutter-xs">
+{% include "admin-includes/sliders/_slider-default.njk" %}
+{% include "admin-includes/sliders/_slider-primary.njk" %}
+{% include "admin-includes/sliders/_slider-success.njk" %}
+{% include "admin-includes/sliders/_slider-info.njk" %}
+{% include "admin-includes/sliders/_slider-warning.njk" %}
+{% include "admin-includes/sliders/_slider-danger.njk" %}
+{% include "admin-includes/sliders/_circular-handle.njk" %}
+{% include "admin-includes/sliders/_slider-ranged.njk" %}
+{% include "admin-includes/sliders/_slider-fixed-max.njk" %}
+{% include "admin-includes/sliders/_slider-fixed-dragg.njk" %}
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0" {{dc}}>{{header2}}</h3>
+  <small>{{sub2}}</small>
+</div>
+{% include "admin-includes/sliders/_slider-currency.njk" %}
+<div class="row gutter-xs">
+{% include "admin-includes/sliders/_slider-vertical.njk" %}
+{% include "admin-includes/sliders/_slider-vertical-img.njk" %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("h5").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

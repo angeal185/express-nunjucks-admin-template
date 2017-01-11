@@ -1,0 +1,34 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+<div class="m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}} default</h3>
+  <small>{{title}}{{sub1}}</small>
+</div>
+{% include "admin-includes/files/_default-files.njk" %}
+<div class="m-b">
+  <h3 class="m-b-0" {{dc}}>{{title}}{{header1}}</h3>
+  <small>{{title}}{{sub1}}</small>
+</div>
+{% include "admin-includes/files/_cancel-files.njk" %}
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/js/json2html.js"></script>
+<script src="/js/jquery.json2html.js"></script>
+<script src="/json/files.json"></script>
+{% endblock %}
+{% block scripts %}
+<script>
+$(function(){
+  $('#default').json2html(data,transform);
+  $('#cancel').json2html(data,transform2);
+});
+$(document).ready(function(){
+  $("small").addClass("hvr-buzz");
+});
+</script>
+{% endblock %}

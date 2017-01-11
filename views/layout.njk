@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html {{lang}}>
+<head>
+{% include "admin-includes/general/_meta.njk" %}
+{% block meta %}{% endblock %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+{% include "admin-includes/general/_css.njk" %}
+{% block styles %}{% endblock %}
+<style>
+
+</style>
+{% include "admin-includes/general/_loader-script.njk" %}
+</head>
+<body class="layout layout-header-fixed layout-footer-fixed">
+{% include "admin-includes/general/_loader.njk" %}
+<div class="start-ani" style="opacity:0;margin-top:-50px;padding-top:50px">
+{% include "admin-includes/general/_header.njk" %}
+{% block header %}{% endblock %}
+<div class="layout-main">
+  
+{% include "admin-includes/general/_sidebar.njk" %}
+
+
+{% block content %}{% endblock %}
+{% block footer %}
+{% include "admin-includes/general/_footer.njk" %}
+{% endblock %}
+</div>
+{% include "admin-includes/general/_right-sidebar.njk" %}
+{% include "admin-includes/general/_js.njk" %}
+</div>
+{% block js %}{% endblock %}
+{% block scripts %}{% endblock %}
+
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿var transform =
+{"<>":"div","class":"col-xs-12 col-md-6","html":[
+	{"<>":"div","class":"panel panel-body","data-toggle":"match-height","html":[
+		{"<>":"h5","html":"${title} progress bar"},
+			{"<>":"div","class":"progress progress-xs","html":[
+        {"<>":"div","class":"progress-bar progress-bar-${title}","role":"progressbar","aria-valuenow":"${amount}","aria-valuemin":"0","aria-valuemax":"100","style":"width: ${amount}%","html":[
+				{"<>":"span","class":"sr-only","html":"${amount}% Complete ${title}"},
+			]},
+		]},
+	]},
+ ]};
+
+var data = [
+{"title":"default","amount":"60"},
+{"title":"success","amount":"80"},
+{"title":"info","amount":"40"},
+{"title":"warning","amount":"50"},
+{"title":"danger","amount":"90"},
+];

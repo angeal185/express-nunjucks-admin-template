@@ -1,0 +1,18 @@
+<div class="layout-header">
+  <div class="navbar navbar-default">
+    {% include "admin-includes/general/header/_navbar-header.njk" %}
+    <div class="navbar-toggleable">
+      <nav id="navbar" class="navbar-collapse collapse">
+        {% include "admin-includes/general/header/_sidenav-toggler.njk" %}
+          <ul class="nav navbar-nav navbar-right">
+            {% include "admin-includes/general/header/_navbar-header-xs.njk" %}
+            {% include "admin-includes/general/header/_navbar-search.njk" %}
+            {% include "admin-includes/general/header/_navbar-message.njk" %}
+            {% include "admin-includes/general/header/_navbar-notification.njk" %}
+            {% include "admin-includes/general/header/_navbar-account.njk" %}
+            {% include "admin-includes/general/header/_navbar-account-xs.njk" %}
+          </ul>
+      </nav>
+    </div>
+  </div>
+</div>

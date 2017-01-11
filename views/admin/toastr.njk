@@ -1,0 +1,20 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+{% include "admin-includes/toastr/_title-form.njk" %}
+      <div class="row gutter-xs">
+{% include "admin-includes/toastr/_type-form.njk" %}
+{% include "admin-includes/toastr/_position-form.njk" %}
+      </div>
+{% include "admin-includes/toastr/_message-form.njk" %}
+{% include "admin-includes/toastr/_checkbox-form.njk" %}
+{% include "admin-includes/toastr/_submit-form.njk" %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

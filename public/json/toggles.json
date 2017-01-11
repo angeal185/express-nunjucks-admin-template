@@ -1,0 +1,78 @@
+﻿var data = [
+{"type":"default","element":"checkbox"},
+{"type":"primary","element":"checkbox"},
+{"type":"success","element":"checkbox"},
+{"type":"info","element":"checkbox"},
+{"type":"warning","element":"checkbox"},
+{"type":"danger","element":"checkbox"}
+];
+
+var data2 = [
+{"type":"default","element":"radio"},
+{"type":"primary","element":"radio"},
+{"type":"success","element":"radio"},
+{"type":"info","element":"radio"},
+{"type":"warning","element":"radio"},
+{"type":"danger","element":"radio"}
+];
+
+var data3 = [
+{"type":"default"},
+{"type":"primary"},
+{"type":"success"},
+{"type":"info"},
+{"type":"warning"},
+{"type":"danger"}
+];
+
+var transform =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${type} custom ${element}"},
+      {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+             {"<>":"code","html":"custom-control-${type}"},
+          ]},
+        ]},
+        {"<>":"label","class":"custom-control custom-control-${type}-${element}","html":[
+          {"<>":"input","class":"custom-control-input","type":"${element}"},
+          {"<>":"span","class":"custom-control-indicator"},
+        ]},
+        {"<>":"label","class":"custom-control custom-control-${type} custom-${element}","html":[
+          {"<>":"input","class":"custom-control-input","type":"${element}","checked":"checked"},
+          {"<>":"span","class":"custom-control-indicator"},
+        ]},
+        {"<>":"label","class":"custom-control custom-control-${type} custom-${element}","html":[
+          {"<>":"input","class":"custom-control-input","type":"${element}","checked":"checked","disabled":"disabled"},
+          {"<>":"span","class":"custom-control-indicator"},
+        ]},
+		 ]},
+	]};
+
+var transform2 =
+{"<>":"div","class":"col-xs-6 col-md-3","html":[
+	{"<>":"div","class":"panel panel-body text-center","data-toggle":"match-height","html":[
+		{"<>":"h5","class":"hvr-buzz","html":"${type}-switch"},
+      {"<>":"p","html":[
+			   {"<>":"small","class":"text-muted","html":[
+             {"<>":"code","html":"custom-control-${type}"},
+          ]},
+        ]},
+        {"<>":"label","class":"switch switch-${type}","html":[
+          {"<>":"input","class":"switch-input","type":"checkbox","checked":"checked"},
+          {"<>":"span","class":"switch-track"},
+          {"<>":"span","class":"switch-thumb"},
+        ]},
+        {"<>":"label","class":"switch switch-${type}  m-l","html":[
+          {"<>":"input","class":"switch-input","type":"checkbox","checked":"checked","disabled":"disabled"},
+          {"<>":"span","class":"switch-track"},
+          {"<>":"span","class":"switch-thumb"},
+        ]},
+		 ]},
+	]};
+
+  $(function(){
+  	$('#checkbox1').json2html(data,transform);
+    $('#radio1').json2html(data2,transform);
+    $('#switch').json2html(data3,transform2);
+  });

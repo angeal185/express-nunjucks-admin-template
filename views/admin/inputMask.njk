@@ -1,0 +1,28 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+  <div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+    <form id="demo-inputmask" class="form-horizontal">
+{% include "admin-includes/input-mask/_date.njk" %}
+{% include "admin-includes/input-mask/_time.njk" %}
+{% include "admin-includes/input-mask/_date-time-12hr.njk" %}
+{% include "admin-includes/input-mask/_date-time-24hr.njk" %}
+{% include "admin-includes/input-mask/_currency.njk" %}
+{% include "admin-includes/input-mask/_currency-euro.njk" %}
+{% include "admin-includes/input-mask/_url.njk" %}
+{% include "admin-includes/input-mask/_ip.njk" %}
+{% include "admin-includes/input-mask/_email.njk" %}
+{% include "admin-includes/input-mask/_mac.njk" %}
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $("span").addClass("hvr-buzz");
+  $(".panel").css({"padding":"1em", "margin":"1em"});
+});
+</script>
+{% endblock %}

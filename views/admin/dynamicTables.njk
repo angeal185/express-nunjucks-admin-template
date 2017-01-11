@@ -1,0 +1,10 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="layout-content">
+<div class="layout-content-body">
+{% include "admin-includes/static-tables/_title-bar.njk" %}
+{% include "admin-includes/dynamic-tables/_dynamic-table.njk" %}
+{% include "admin-includes/dynamic-tables/_dynamic-table-search.njk" %}
+</div>
+</div>
+{% endblock %}
