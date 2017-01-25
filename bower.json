@@ -4,10 +4,6 @@
   "description": "nunjucks admin template",
   "author": "ben eaves",
   "homepage": "https://angeal185.github.io",
-  "main": [
-    "dist/css/elephant.css",
-    "dist/js/elephant.js"
-  ],
   "private": true,
   "ignore": [
     "**/.*",
