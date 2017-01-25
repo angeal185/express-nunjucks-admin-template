@@ -7,22 +7,34 @@ $ npm install
 $ bower install
 
 rename file 
-````env.example.txt ````
+````
+env.example.txt
+````
 to
-````env.example````
+````
+env.example
+````
 
 
 -start mongo server
-````mongod````
+````
+mongod
+````
 
 -start nodemon
-````gulp````
+````
+gulp
+````
 
 ### Create Admin User
-````/account/signup````
-````/account/login````
+````
+/account/signup
+/account/login
+````
 ### Account
-````/account````
+````
+/account
+````
 
 ### access Dashboard
 ````
@@ -69,7 +81,9 @@ to
 /account
 ````
 
-````Read app.js````
+````
+Read app.js
+````
 
 Done
 
